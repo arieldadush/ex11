@@ -69,7 +69,6 @@ float cov(float *x, float *y, int size) {
     for (int i = 0; i < size; ++i) {
         if (x == nullptr) throw exception();
         if (y == nullptr) throw exception();
-        int ff = 8;
         covariance += (*x - avgX) * (*y - avgY);
         ++x;
         ++y;
